@@ -5,7 +5,7 @@ import logging
 import requests
 import re
 import os
-import datetime
+from datetime import datetime, now
 
 gemini_api_key = os.environ.get('GEMINI_API_KEY')
 telegram_token = os.environ.get('TELEGRAM_BOT_TOKEN')
@@ -257,4 +257,4 @@ with st.expander("📈 Phân tích bot hiện tại"):
 
 if __name__ == '__main__':
     st.sidebar.header("📅 Thông tin")
-    st.sidebar.text(f"🕒 {datetime.now().strftime('%H:%M:%S %d/%m/%Y')}")
+    st.sidebar.text(f"🕒 {now().strftime('%H:%M:%S %d/%m/%Y')}")
