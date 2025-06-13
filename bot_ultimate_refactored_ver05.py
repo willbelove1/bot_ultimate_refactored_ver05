@@ -256,4 +256,4 @@ with st.expander("📈 Phân tích bot hiện tại"):
 
 if __name__ == '__main__':
     st.sidebar.header("📅 Thông tin")
-    st.sidebar.write(f"🕒 {datetime.now().strftime('%H:%M:%S %d/%m/%Y')}")
+    st.sidebar.text(f"🕒 {datetime.datetime.now().strftime('%H:%M:%S %d/%m/%Y')}")
