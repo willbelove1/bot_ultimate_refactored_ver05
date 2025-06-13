@@ -17,12 +17,12 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s',
     encoding='utf-8'
 )
-load_dotenv()
+from pycoingecko import CoinGeckoAPI
 
 cg = CoinGeckoAPI()
-gemini_api_key = os.getenv('GEMINI_API_KEY')
-telegram_token = os.getenv('TELEGRAM_BOT_TOKEN')
-telegram_chat_id = os.getenv('TELEGRAM_GROUP_ID')
+gemini_api_key = os.environ.get('GEMINI_API_KEY')
+telegram_token = os.environ.get('TELEGRAM_BOT_TOKEN')
+telegram_chat_id = os.environ.get('TELEGRAM_GROUP_ID')
 
 # === HÀM HỖ TRỢ === #
 def normalize_symbol(symbol: str) -> str:
