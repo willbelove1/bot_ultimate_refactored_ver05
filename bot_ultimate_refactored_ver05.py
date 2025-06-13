@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
-import os
 import json
 import logging
 import requests
 import re
+import os
 
 gemini_api_key = os.environ.get('GEMINI_API_KEY')
 telegram_token = os.environ.get('TELEGRAM_BOT_TOKEN')
