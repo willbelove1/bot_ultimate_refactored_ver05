@@ -1,0 +1,2 @@
+# bot_ultimate_refactored_ver05
+bot_ultimate_refactored_ver05
