@@ -1,7 +1,7 @@
-streamlit
-pandas
-os  # Không cần thiết, là module built-in
-json  # Không cần thiết, là module built-in
-logging  # Không cần thiết, là module built-in
-requests
-re  # Không cần thiết, là module built-in
+os 
+json 
+logging
+re
+streamlit>=1.35.0
+pandas>=2.2.2
+requests>=2.31.0
