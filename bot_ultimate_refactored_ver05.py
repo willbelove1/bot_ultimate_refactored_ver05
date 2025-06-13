@@ -5,9 +5,10 @@ import json
 import logging
 import requests
 import re
-from datetime import datetime
-from dotenv import load_dotenv
-from pycoingecko import CoinGeckoAPI
+
+gemini_api_key = os.environ.get('GEMINI_API_KEY')
+telegram_token = os.environ.get('TELEGRAM_BOT_TOKEN')
+telegram_chat_id = os.environ.get('TELEGRAM_GROUP_ID')
 
 # === CẤU HÌNH === #
 logging.basicConfig(
