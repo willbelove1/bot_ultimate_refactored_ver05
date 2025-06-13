@@ -5,7 +5,7 @@ import logging
 import requests
 import re
 import os
-from datetime import datetime, now
+from datetime import datetime
 
 gemini_api_key = os.environ.get('GEMINI_API_KEY')
 telegram_token = os.environ.get('TELEGRAM_BOT_TOKEN')
