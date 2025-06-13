@@ -1,0 +1,7 @@
+streamlit
+pandas
+os  # Không cần thiết, là module built-in
+json  # Không cần thiết, là module built-in
+logging  # Không cần thiết, là module built-in
+requests
+re  # Không cần thiết, là module built-in
